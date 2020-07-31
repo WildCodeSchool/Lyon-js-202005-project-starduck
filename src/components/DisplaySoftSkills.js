@@ -1,5 +1,6 @@
 import React from "react";
 
+
 function DisplaySoftSkills(props) {
   return (
     <div>

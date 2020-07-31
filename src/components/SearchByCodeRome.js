@@ -8,6 +8,7 @@ import MyResponsiveRadar from "./MyResponsiveRadar";
 import axios from "axios";
 import qs from "qs";
 
+
 // data en dur :
 let candidates = [
   { id: 0, name: "", candidateSoftSkills: {} },

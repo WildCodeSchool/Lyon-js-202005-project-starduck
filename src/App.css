@@ -1,6 +1,9 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  margin: 20px;
 }
+
+
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +38,24 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.softSkill {
+  border: 1px solid #f8f8f8;
+  border-radius: 2px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.55);
+}
+
+.graph {
+  height: 500px;
+}
+
+table {
+    width: 100%;
+}
+tr {
+  vertical-align: top;
+
 }

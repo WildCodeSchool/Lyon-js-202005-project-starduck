@@ -4,7 +4,6 @@ import secretData from "../data/secretData.json";
 
 import DisplaySoftSkills from "./DisplaySoftSkills";
 
-
 import axios from "axios";
 import qs from "qs";
 
