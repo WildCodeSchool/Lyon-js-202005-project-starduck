@@ -18,6 +18,7 @@ function Main() {
           <Route exact path="/" component={Connection}/>
           <Route path="/dashboard-coach" component={DashboardCoach}/>
           {/* <Route path="/rome-research" component={RomeResearch}/>
+          <Route path="/sign-in" component={SignIn}/>
           <Route path="/rome-vs-candidate" component={RomeVsCandidate}/>
           <Route path="/Candidates-management" component={CandidatesManagement}/>
           <Route path="/edit-profile" component={EditProfile}/>
