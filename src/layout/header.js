@@ -1,8 +1,21 @@
 import styled from "styled-components";
+// import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import React from 'react';
+import WorkingMenu from "../components/WorkingMenu";
 
-const Header = styled.header`
+const HeaderWrapper = styled.header`
   grid-area: head;
   background-color: #ffff64;
 `;
+
+function Header() {
+  return(
+    <HeaderWrapper>
+      <WorkingMenu/>
+    </HeaderWrapper>
+  )
+}
+
+
 
 export default Header;

@@ -1,11 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import GridLayout from "./layout/gridLayout";
-import Footer from "./layout/footer";
-import Main from "./layout/main";
-import Nav from "./layout/nav";
-import Header from "./layout/header";
+import GridLayout from "./layout/GridLayout";
+import Footer from "./layout/Footer";
+import Main from "./layout/Main";
+import Nav from "./layout/Nav";
+import Header from "./layout/Header";
+
+
 
 
 function App() {
