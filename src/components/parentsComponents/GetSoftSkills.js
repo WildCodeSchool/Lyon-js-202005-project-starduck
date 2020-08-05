@@ -1,18 +1,17 @@
 import React from 'react';
-//import Axios from 'axios';
+import axios from 'axios';
 
 
 
 const GetSoftSkills = (codeRome) =>{
-   // console.log (props);
+   
 
-       const axios = require('axios');
 
         let config = {
         method: 'post',
         url: 'https://api.emploi-store.fr/partenaire/matchviasoftskills/v1/professions/job_skills?code=A1201',
         headers: { 
-            'Authorization': 'Bearer 9b441d12-83c2-412c-9f2d-d91eb59a8ca4', 
+            'Authorization': 'Bearer 23da94bd-77ae-4366-a0ab-80d98033c076', 
         }
         };
 
@@ -31,6 +30,6 @@ const GetSoftSkills = (codeRome) =>{
         )
     
 }
-
+console.log (GetSoftSkills());
 
 export default GetSoftSkills ;
