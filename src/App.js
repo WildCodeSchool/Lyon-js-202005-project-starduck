@@ -5,6 +5,7 @@ import Footer from "./layout/Footer";
 import Main from "./layout/Main";
 import Nav from "./layout/Nav";
 import Header from "./layout/Header";
+import DisplayRadar from "./components/DisplayRadar";
 
 
 
@@ -17,8 +18,9 @@ function App() {
       <Nav />
        <Main>
       </Main> 
-      <Footer /> 
+      <Footer />
     </GridLayout>
+    <DisplayRadar />
     </div>
   );
 }
