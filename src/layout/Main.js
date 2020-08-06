@@ -14,6 +14,7 @@ const MainWrapper = styled.body`
 function Main() {
   return (
     <div className="App">
+      
       <MainWrapper>
 
        <Switch>
