@@ -6,6 +6,7 @@ import axios from 'axios';
 const GetSoftSkills = (codeRome) =>{
    
 
+    
 
         let config = {
         method: 'post',
