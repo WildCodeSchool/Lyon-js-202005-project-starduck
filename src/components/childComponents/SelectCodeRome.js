@@ -18,17 +18,23 @@ const SelectCodeRome = () => {
     return (
         <div>
             <h1>Select Code ROME</h1>
+            <div>
             <label htmlFor="idLevel1">Choisissez une famille de métier : </label>
             <select id="idLevel1" onChange = {handleChangeLevel1}>  
                 {/* <option value={0}></option> */}
                 {codesRomeTree.map((item, i) => {return(<option key={item.id} value={i}>{item.text}</option>)})}
              </select>  
+            </div>
 
+            <div>
             <label htmlFor="idLevel2">Choisissez un domaine professionnel : </label>
             <select id="idLevel2" onChange = {handleChangeLevel2}>  
                 {/* <option value={0}></option> */}
                 {idLevel1 !==0? codesRomeTree[idLevel1].children.map((item, i) => {return(<option key={item.id} value={i}>{item.text}</option>)}) : ""}         
             </select>
+            </div>
+
+            <div>
             
             <label htmlFor="idLevel3">Choisissez une fiche métier  : </label>
             <select id="idLevel3" onChange = {handleChangeLevel3}>  
@@ -37,12 +43,16 @@ const SelectCodeRome = () => {
                 .map((item, i) => {return(<option key={item.id} value={i}>{item.text} </option>)}) : ""}         
             </select>
 
+            </div>
+
+            <div>
             <label htmlFor="idLevel4">Choisissez un intitulé de métier  : </label>
             <select id="idLevel4" onChange = {handleChangeLevel4}>  
                 {/* <option value={0}></option> */}
                 {idLevel1 !==0 && idLevel2 !==0 && idLevel3 !==0 ? codesRomeTree[idLevel1].children[idLevel2].children[idLevel3].children
                 .map((item, i) => {return(<option key={item.id} value={i}>{item.text} </option>)}) : ""}         
             </select>
+            </div>
 
 
         </div>
