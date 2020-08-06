@@ -16,8 +16,8 @@ function WorkingMenu() {
             <span><Link to="/">Connection</Link></span>
              {/* <span><Link to="/sign-in">Sign In</Link></span> */}
              <span><Link to="/dashboard-coach">Dashboard Coach</Link></span>
+             <span><Link to="/rome-research">Rome Research</Link></span>
             {/*
-            <span><Link to="/rome-research">Rome Research</Link></span>
             <span><Link to="/rome-vs-candidate">Rome Vs Candidate</Link></span>
             <span><Link to="/candidates-management">Candidates Management</Link></span>
             <span><Link to="/edit-profile">Edit Profile</Link></span>
