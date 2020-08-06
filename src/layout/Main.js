@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import React from "react";
-import Connection from "../components/parentsComponents/Connection";
-import DashboardCoach from "../components/parentsComponents/DashboardCoach";
+import Connection from "../components/parentsComponents/Connection"
+import DashboardCoach from "../components/parentsComponents/DashboardCoach"
+import GetSoftSkills from "../components/parentsComponents/GetSoftSkills"
 import { Switch, Route } from 'react-router-dom';
 import SelectCodeRome from "../components/childComponents/SelectCodeRome";
 
