@@ -74,6 +74,6 @@ const GetSoftSkills = (props) => {
                 }
             </div>
         )
-    
+}
 
 export default GetSoftSkills;
