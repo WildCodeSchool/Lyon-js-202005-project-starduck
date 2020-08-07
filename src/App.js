@@ -5,6 +5,7 @@ import Footer from "./layout/Footer";
 import Main from "./layout/Main";
 import Nav from "./layout/Nav";
 import Header from "./layout/Header";
+import DisplayRadar from "./components/DisplayRadar";
 
 
 
@@ -15,6 +16,7 @@ function App() {
   const [token, setToken] = useState("Insérer le token");
 
   return (
+
       <GridLayout>
         <Header token={token} setToken={setToken}/>
         <Nav />
@@ -22,6 +24,7 @@ function App() {
         </Main>
         <Footer />
       </GridLayout>
+
   );
 }
 
