@@ -5,6 +5,7 @@ import DashboardCoach from "../components/parentsComponents/DashboardCoach"
 import GetSoftSkills from "../components/childComponents/GetSoftSkills"
 import { Switch, Route } from 'react-router-dom';
 import SelectCodeRome from "../components/childComponents/SelectCodeRome";
+import DisplayRadar from "../components/DisplayRadar";
 
 const MainWrapper = styled.body`
   grid-area: main;
@@ -20,7 +21,10 @@ function Main(props) {
         <Switch>
           <Route exact path="/" component={Connection} />
           <Route path="/dashboard-coach" component={DashboardCoach} />
-          <Route path="/rome-research" ><div><SelectCodeRome /></div><div><GetSoftSkills codeRome={"A1201"} token={props.token} /></div></Route>
+          <Route path="/rome-research" >
+          <div><SelectCodeRome /></div>
+          <div><DisplayRadar /></div>         
+          <div><GetSoftSkills codeRome={"A1201"} token={props.token} /></div></Route>
           <Route path="/sign-in" />
           <Route path="/rome-vs-candidate" />
           <Route path="/Candidates-management" />
