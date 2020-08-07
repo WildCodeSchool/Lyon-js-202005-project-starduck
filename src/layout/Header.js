@@ -5,17 +5,15 @@ import WorkingMenu from "../components/WorkingMenu";
 
 const HeaderWrapper = styled.header`
   grid-area: head;
-  background-color: #ffff64;
+  // background-color: #ffff64;
 `;
 
-function Header() {
+function Header(props) {
   return(
     <HeaderWrapper>
-      <WorkingMenu/>
+      <WorkingMenu token={props.token} setToken={props.setToken}/>
     </HeaderWrapper>
   )
 }
-
-
 
 export default Header;

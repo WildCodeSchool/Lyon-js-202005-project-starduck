@@ -8,27 +8,27 @@ import SelectCodeRome from "../components/childComponents/SelectCodeRome";
 
 const MainWrapper = styled.body`
   grid-area: main;
-  background-color: #8ca0ff;
+  // background-color: #8ca0ff;
 `;
 
-function Main() {
-  return (
-    <div className="App">
-      
-      <MainWrapper>
+function Main(props) {
+  console.log("token:", props.token);
 
-       <Switch>
-          <Route exact path="/" component={Connection}/>
-          <Route path="/dashboard-coach" component={DashboardCoach}/>
-          <Route path="/rome-research" ><div><SelectCodeRome/></div><div><GetSoftSkills codeRome = {"A1201"}/></div></Route>
-          {/* <Route path="/sign-in" component={SignIn}/>
-          <Route path="/rome-vs-candidate" component={RomeVsCandidate}/>
-          <Route path="/Candidates-management" component={CandidatesManagement}/>
-          <Route path="/edit-profile" component={EditProfile}/>
-          <Route path="/dashboard-candidate" component={DashboardCandidate}/>
-          <Route path="/edit-soft-skills" component={EditSoftSkills}/>
-          <Route path="/candidate-soft-skills" component={CandidateSoftSkills}/> */} */}
-          </Switch>
+  return (
+    <div>
+      <MainWrapper>
+        <Switch>
+          <Route exact path="/" component={Connection} />
+          <Route path="/dashboard-coach" component={DashboardCoach} />
+          <Route path="/rome-research" ><div><SelectCodeRome /></div><div><GetSoftSkills codeRome={"A1201"} token={props.token} /></div></Route>
+          <Route path="/sign-in" />
+          <Route path="/rome-vs-candidate" />
+          <Route path="/Candidates-management" />
+          <Route path="/edit-profile" />
+          <Route path="/dashboard-candidate" />
+          <Route path="/edit-soft-skills" />
+          <Route path="/candidate-soft-skills" />
+        </Switch>
       </MainWrapper>
     </div>
   );

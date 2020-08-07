@@ -1,29 +1,29 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 
 
+const GetSoftSkills = (props) => {
 
-const GetSoftSkills = (codeRome) =>{
-   
-    const [softSkills,setSoftSkills] = useState(0)
+    const [softSkills, setSoftSkills] = useState({})
+    let token = props.token;
 
-    let token = '4fc7c867-b097-440c-8298-09b32066347e';
 
-            let config = {
+    let config = {
         method: 'post',
-        url: 'https://cors-anywhere.herokuapp.com/https://api.emploi-store.fr/partenaire/matchviasoftskills/v1/professions/job_skills?code='+codeRome,
-        headers: { 
-            'Authorization': 'Bearer '+token, 
+        url: 'https://cors-anywhere.herokuapp.com/https://api.emploi-store.fr/partenaire/matchviasoftskills/v1/professions/job_skills?code=' + props.codeRome,
+        headers: {
+            'Authorization': 'Bearer ' + token,
         }
-        };
+    };
 
-        axios(config)
+    axios(config)
         .then((response) => {
         console.log(JSON.stringify(response.data));
             setSoftSkills(response.data);
         })
         .catch((error) => {
             console.log(error);
+
         });
 
 
@@ -75,6 +75,5 @@ const GetSoftSkills = (codeRome) =>{
             </div>
         )
     
-}
 
-export default GetSoftSkills ;
+export default GetSoftSkills;
