@@ -8,7 +8,7 @@ const GridLayout = styled.div`
     "head head"
     "nav  main"
     "nav  foot";
-  grid-template-rows: 50px 1fr 30px;
+  grid-template-rows: 100px 1fr 30px;
   grid-template-columns: 150px 1fr;
 `;
 

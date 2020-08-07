@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import GridLayout from "./layout/GridLayout";
 import Footer from "./layout/Footer";
@@ -12,17 +12,16 @@ import Header from "./layout/Header";
 
 
 function App() {
+  const [token, setToken] = useState("Insérer le token");
+
   return (
-    <div className="App">
-       <GridLayout>
-      <Header />
-      <Nav />
-       <Main>
-         
-      </Main> 
-      <Footer /> 
-    </GridLayout>
-    </div>
+      <GridLayout>
+        <Header token={token} setToken={setToken}/>
+        <Nav />
+        <Main token={token}>
+        </Main>
+        <Footer />
+      </GridLayout>
   );
 }
 
